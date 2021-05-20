@@ -28,6 +28,7 @@ func initClient(ctx context.Context) (err error) {
 	return nil
 }
 func main() {
+	//测试rset
 	//connect redis
 	ctx := context.Background()
 	err := initClient(ctx)
