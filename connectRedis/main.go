@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/go-redis/redis"
 	_ "github.com/go-redis/redis"
+	"github.com/go-redis/redis/v8"
 
 	_ "github.com/go-sql-driver/mysql"
 )
@@ -37,6 +37,7 @@ func main() {
 		panic(err)
 	}
 
+	//5.24 update
 	fmt.Println("connect redis successfly")
 
 }
